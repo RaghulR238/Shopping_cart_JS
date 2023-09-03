@@ -1,0 +1,136 @@
+*{
+    font-family: 'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:darkslategray;
+}
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 99;
+    background-color: rgb(228, 72, 72);
+}
+.nav{
+    max-width :1200px;
+    margin: auto;
+    width:100%;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font: size 20px;
+    font-weight: 550;
+    color: rgb(233, 240, 240);
+}
+.box{
+    color: white;
+    /* background-color: rgb(7, 233, 18); */
+    width:30px;
+    height: 30px;
+    text-align: center;
+    margin:20px;
+    position: relative;
+}
+#cart_count{
+    position: absolute;
+    background-color: #e0ec30;
+    color:black;
+    top: -8px;
+    right:-3px;
+    height:20px;
+    padding: 3px;
+    border-radius: 50%;
+}
+#cart-icon
+{
+    position: absolute;
+    cursor: pointer;
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+.shop_content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap:1.5rem;
+    justify-content:center;
+    align-content:center;
+}
+.container{
+    max-width:1200px;
+    padding:4rem;
+    margin:auto;
+    width:100%;
+    /* background-color: aquamarine; */
+}
+img{
+    width:100%;
+}
+.foodbox{
+    background-color: white;
+    padding:10px;
+    border-radius:3px;
+    position: relative;
+}
+.pic{
+    overflow: hidden;
+}
+.pic:hover img{
+    transform:scale(1.5);
+}
+.food-img{
+    transition:0.5s;
+    aspect-ratio: 1/1;
+    object-fit:cover;
+}
+.food-title{
+    font-size: 1rem;
+    font-weight:600;
+    color:red;
+}
+.food-price{
+    font-weight: 500;
+}
+.ads_cart{
+    position: absolute;
+    bottom:0;
+    right:0;
+    background-color: chartreuse;
+    color: white;
+    padding:10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.ads_cart:hover{
+    background-color: red;
+    transition: 3ms;
+}
+.cart{
+    position: fixed;
+    top:0;
+    right:-100%;
+    width:400px;
+    height:100vh;
+    overflow-y:auto;
+    overflow-x: hidden;
+    padding:20px;
+    background-color: white;
+}
+.cart-active{
+    right:0;
+    transition:0.5s;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 10%;
+    align-items: center;
+    gap:1rem;
+    margin-top: 1rem;
+    padding-bottom: 10px;
+}
